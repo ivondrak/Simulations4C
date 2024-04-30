@@ -1,0 +1,118 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build QC project",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++11", // Předpokládá použití C++11, upravte podle potřeby
+                "-g",
+                "qcsim.cpp",
+                "qcdemo.cpp",
+                "-o",
+                "qcdemo" // Jméno výstupního spustitelného souboru
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["absolute"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build EO project",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++11", // Předpokládá použití C++11, upravte podle potřeby
+                "-g",
+                "glsim.cpp",
+                "eosim.cpp",
+                "eodemo.cpp",
+                "-o",
+                "eodemo" // Jméno výstupního spustitelného souboru
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["absolute"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build MC project",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++11", // Předpokládá použití C++11, upravte podle potřeby
+                "-g",
+                "glsim.cpp",
+                "mcsim.cpp",
+                "mcdemo.cpp",
+                "-o",
+                "mcdemo" // Jméno výstupního spustitelného souboru
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["absolute"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}

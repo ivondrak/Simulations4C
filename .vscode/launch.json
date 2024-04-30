@@ -1,0 +1,49 @@
+{
+    // Pro informace o možných atributech použijte technologii IntelliSense.
+    // Umístěním ukazatele myši zobrazíte popisy existujících atributů.
+    // Další informace najdete tady: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) Spustit QC Demo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/qcdemo",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build QC project"
+        },
+        {
+            "name": "(lldb) Spustit EO Demo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/eodemo",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build EO project"
+        },
+        {
+            "name": "(lldb) Spustit MC Demo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/mcdemo",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build MC project"
+        }
+
+
+    ]
+}

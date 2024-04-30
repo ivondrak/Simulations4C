@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "*.pl": "prolog",
+        "limits": "cpp"
+    }
+}
